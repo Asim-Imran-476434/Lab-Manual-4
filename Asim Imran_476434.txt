@@ -1,0 +1,64 @@
+                                        Task No.1
+#include <iostream>
+using namespace std;
+int main(){
+	int i,sum;
+
+	for( i=0; i<11; i++){
+	cout<<"Enter Natural number : ";
+	cin>>i;	
+	sum=i+sum;
+	
+	}
+	cout<<"Sum of First ten natural numbers ="<<sum;
+	return 0;
+}
+                                        Task No.2
+#include <iostream>
+using namespace std;
+int main(){
+	int x,tb;
+	cout<<"Enter a number for table :";
+	cin>>x;
+	for(int a=0;a<11;a++){
+	tb=x*a;
+	cout<<x<<"x"<<a<<"="<<tb<<endl;	
+	}
+	return 0;
+}
+
+                                        Task No.3
+#include <iostream>
+using namespace std;
+int main(){
+	int f,num;
+	cout<<"Enter the number for factorial :";
+	cin>>f;
+	
+	num=1;
+	for (int x=f; x>0;x--){
+		num=x*num;
+	}
+	cout<<"factorial of the guven number="<<num<<endl;
+	return 0;
+}
+                                        Task No.4
+#include <iostream>
+using namespace std;
+int main(){
+	int a,b,len,d;
+	cout<<"Enter First number for Sequence :";
+	cin>>a;
+	cout<<"Enter End number for Sequence:";
+	cin>>b;
+	cout<<"Enter the number of terms in sequence:";
+	cin>>len;
+	for(int x=0;x<len/3;x++){
+	d=a+b;
+	cout<<a<<" "<<b<<" "<<d<<" ";
+	a=d+b;
+	b=a+d;	
+	}
+	
+	return 0;
+}
